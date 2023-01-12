@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>MOKEPON!</title>
+    <script defer src="./js/mokepon.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <section id="seleccionar-mascota">
+        <h1 class="titulo">Mokepon</h1>
+        <h2 class="subtitulo">Elige tu mascota</h2>
+        <div class="tarjetas" id="tarjetas-mascotas">
+        </div>
+        <button id="boton-mascota">Seleccionar</button>
+    </section>
+    <section id="ver-mapa">
+        <h1 class="titulo">Mokepon</h1>
+        <h2 class="subtitulo">Recorre el mapa con tu mokepon</h2>
+        <canvas id="mapa"></canvas>
+    </section>
+    <section id="seleccionar-ataque">
+        <h1 class="titulo">Mokepon</h1>
+        <h2 class="subtitulo">Elige tu ataque</h2>
+        <div class="botones-ataque" id="botones-jugador">
+        </div>
+        <div id="mensajes" class="notificaciones">
+            <p id="resultado-batalla">¡Que comience la batalla!</p>
+            <button id="boton-reiniciar">Volver a jugar</button>
+            <button id="boton-continuar">Continuar</button>
+        </div>
+        <div class="tarjeta-combate">
+            <div class="div-jugador">
+                <div id="tarjeta-jugador" class="tarjeta-ataque">
+                    <p>Jugador</p>
+                    <p id="mascota-jugador">Nombre j</p>
+                    <img id="img-jugador" alt="jugador"/>
+                    <p id="vida-jugador">vidas</p>
+                </div>
+                <div class="ataques" id="ataques-jugador">
+                    <p>ataque</p>
+                </div>
+            </div>
+            <div class="div-enemigo">
+                <div id="tarjeta-jugador" class="tarjeta-ataque">
+                    <p>Enemigo</p>
+                    <p id="mascota-enemigo">Nombre e</p>
+                    <img id="img-enemigo" alt="enemigo"/>
+                    <p id="vida-enemigo">vidas</p>
+                </div>
+                <div class="ataques" id="ataques-enemigo">
+                    <p>ataque</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
